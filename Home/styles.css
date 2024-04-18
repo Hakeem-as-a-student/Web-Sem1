@@ -1,0 +1,93 @@
+/*Configuring default settings for webpage*/
+*{
+    margin:0;
+    padding:0;
+
+}
+/*adding fonts*/
+@font-face {
+    font-family: heading;
+    src: url(Fonts/FjallaOne-Regular.ttf);
+}
+@font-face {
+    font-family: para;
+    src: url(Fonts/OstrichSansRounded-Medium.otf);
+}
+
+/*setting fonts*/
+h1{
+    font-family: heading;
+    font-size:30px;
+    color:rgba(255, 255, 255, 0.825);
+    margin-left:30px;
+}
+p{
+    font-family: para;
+    font-size:25px;
+    color:rgba(255, 255, 255, 0.825);
+    margin-left:40px;
+}
+
+/*top banner configs*/
+.top_banner{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(to right,rgba(0,0,0,.85),rgba(0,0,0,.7))
+    ,url(Pics/sup.jpg);
+    background-size:cover;
+    background-position:center center;
+}
+.top_content{
+    width:100%;
+    text-align:left;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+/*middle banner configs*/
+.mid_banner{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(to right,rgba(0,0,0,.85),rgba(0,0,0,.7)) 
+    ,url(Pics/emp.jpg);
+    background-size:cover;
+    background-position:center center;
+}
+.mid_content{
+    width:100%;
+    text-align:right;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.mid_content h1,p{
+    margin-right:30px;
+}
+
+/*bottom banner configs*/
+.bot_banner{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(to right,rgba(0,0,0,.85),rgba(0,0,0,.7)) 
+    ,url(Pics/e2.jpg);
+    background-size:cover;
+    background-position:center center;
+}
+.bot_content{
+    width:100%;
+    text-align:center;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.foot_banner{
+    width:100%;
+    height:300px;
+    background-color:#0a4a16;
+}
+.foot_logo{
+    width:100%;
+    background-image:url(Pics/F1.png);
+    
+}
