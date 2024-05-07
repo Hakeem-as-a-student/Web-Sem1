@@ -42,6 +42,10 @@ p{
     border-bottom:2px solid rgb(44, 43, 43);
 
 }
+/*gives colors to the navigation except the homepage*/
+.nav-color{
+    background: lime;
+}
 .nav_logo{
     width:200px;
     height:75px;
@@ -126,7 +130,8 @@ p{
     background: rgba(255, 255, 255,.4);
 }
 
-/*top banner configs*/
+/*-----------------------Home page-------------------*/
+/* top banner configs*/
 .top_banner{
     width:100%;
     height:100vh;
@@ -298,4 +303,109 @@ p{
     position:relative;
     top:10px;
     text-align: center;
+}
+/*------------------About Us----------------*/
+/*top heading*/
+.about_title{
+    width:100%;
+    height:125px;
+    align-content:center;
+    border:2px solid red;
+    margin-bottom:50px;
+    /*background-image:linear-gradient(to right,green,lime);*/
+}
+.about_title h1{
+    font-size:50px;
+}
+/*temparory*/
+.body{
+background: rgb(117, 116, 116);
+}
+/*maps, and branches*/
+.branch_holder{
+    width:100%;
+    height:400px;
+    display:flex;
+    justify-content: space-around;
+    /*gap:30px;*/
+    border:1px solid purple;
+    margin: 0;
+}
+.branch1{
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+    justify-content: center;
+    /*flex-grow:1;*/
+}
+.branch2{
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+    justify-content: center;
+    /*flex-grow:1;*/
+}
+
+.branch1 .pic1{
+    flex:1;
+    width:250px;
+    height:50px;
+    
+}
+.branch2 .pic2{
+    flex:1;
+    width:250px;
+    height:50px;
+}
+/*table of services*/
+.service_table{
+    width:100%;
+    height:200px;
+}
+.table th,td{
+    padding:10px;
+    
+}
+.table{
+    border-collapse: collapse;
+}
+.desc{
+    border:1px solid lime;
+}
+
+/*-------------Loyalty Program-------------------*/
+/*top heading*/
+.loyalty_title{
+    width:100%;
+    height:125px;
+    align-content:center;
+    border:2px solid red;
+    margin-bottom:50px;
+    /*background-image:linear-gradient(to right,green,lime);*/
+}
+.loyalty_title h1{
+    font-size:50px;
+}
+.program_container{
+    width:100%;
+    height:400px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:2px solid yellow;
+}
+.program_container div{
+    border:2px solid purple;
+    border-radius:10px;
+    align-content: center;
+}
+.program_container div:hover{
+    content:'';
+    background-color: rgba(255,255,255, .3);
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color:lime;
 }
