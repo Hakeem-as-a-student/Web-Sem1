@@ -104,7 +104,7 @@ p{
     min-width:100%;
     display:none;
     position:absolute;
-    top:35px;
+    top:40px;
     left:0px;
     z-index:1;
     background: rgb(40, 39, 39);
@@ -234,11 +234,76 @@ p{
         font-size: smaller;
     }
 }
+@media screen and (max-width:431px){ /*iPhone 14*/
+    .foot_logo{
+        max-width:100px;
+        max-height: 60px;
+        /*border: 2px solid black;*/
+    }
+    .foot_banner{
+        max-height: 180px;
+    }
+    .foot_content>.faq{
+        font-size: 10px; 
+        max-width: 200px;
+        max-height:100px;
+        /*border:1px solid red ;*/
+        margin: 0;
+        position: relative;
+        left: 120px;
+    }
+    .foot_banner>.foot_content>.socials{
+        /*display: none;*/
+        position: relative;
+        top:90px;
+        right: 250px;
+        display: flex;
+    }
+    .foot_banner>.foot_content>.socials p{
+        display: none;
+    }
+    .foot_banner>.address{
+        display: none;
+    }
+    .foot_banner>.copyright{
+        position: relative;
+        top: 65px;
+    }
+}
+@media screen and (max-width:391px){/*iPhone 12*/
+    .foot_banner>.foot_content>.socials{
+        position: relative;
+        top:90px;
+        right: 220px;
+        display: flex;
+        /*border: 2px solid black;*/
+    }
+}
+@media screen and (max-width:380px){/*iPhone SE*/
+    .foot_banner>.foot_content>.socials{
+        position: relative;
+        top:100px;
+        right: 200px;
+        /*border: 2px solid black;*/
+    }
+    .foot_banner>.copyright{
+        position: relative;
+        top: 50px;
+    }
+}
+@media screen and (max-width:345px) {
+    .foot_banner>.foot_content>.socials{
+        position: relative;
+        top:100px;
+        right: 180px;
+        /*border: 2px solid black;*/
+    }
+}
 
 /*footer stylings*/
 .foot_banner{
     width:100%;
-    height:260px;
+    height:270px;
     background:rgb(22,22,74);
     margin-left:0px;
     border-top:2px solid black;
@@ -315,7 +380,7 @@ p{
     /*border:3px solid black;*/
 }
 .building{
-    width:30px;
+    width:40px;
     height:50px;
     margin-left:20px;
 }
@@ -325,16 +390,18 @@ p{
 }
 /*Placing the copyright message*/
 .copyright{
-    max-width:100%;
+    width:100%;
+    margin-top:5px;
     height:45px;
+    align-content: center;
     background-color: rgb(33, 33, 33);
 }
 .copyright p{
     font-size: 15px;
-    position:relative;
-    top:10px;
     text-align: center;
 }
+/*-----------------------------------------------------------------*/
+
 
 /*-----------------------Home page-------------------*/
 /* top banner configs*/
@@ -414,6 +481,8 @@ p{
     top:50%;
     transform: translateY(-50%);
 }
+/*-----------------------------------------------------------------*/
+
 
 /*------------------About Us----------------*/
 /*top heading*/
@@ -423,7 +492,7 @@ p{
     align-content:center;
     border-bottom:2px solid rgb(0, 85, 17);
     /*margin-bottom:50px;*/
-    background:linear-gradient(to right,rgba(1, 99, 4,.5),rgba(0,99,4,.5))
+    background:linear-gradient(to right,rgba(1, 99, 4,1),rgba(0,99,4,.6))
 }
 .about_title h1{
     font-size:50px;
@@ -443,7 +512,7 @@ background: rgb(255, 255, 255);
 .history{
     display:flex;
     justify-content: center;
-    margin:50px 0 50px 0;
+    margin:50px 0;
     /*border: 2px solid black;*/
 
 }
@@ -451,13 +520,14 @@ background: rgb(255, 255, 255);
     font-size:large;
     width:900px;
     height:auto;
-    padding:15px 15px 15px 15px;
+    padding:15px;
     border:4px solid lime;
     border-radius:25px;
     background:rgb(58, 183, 183);
     align-content: center;
     line-height: 1.5;
     text-align: center;
+    box-shadow: black 2px 2px 2px;
     
 }
 .branch_title{
@@ -546,19 +616,26 @@ background: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.desc{
-    /*border:1px solid lime;*/
-}
 /*table of services*/
+.table_color{
+    width:100%;
+    height:350px;
+    background: aquamarine;
+    margin-top:50px;
+    align-content: center;
+}
 .service_table{
     max-width:100%;
     display:flex;
     margin:50px;
+    /*border: 2px solid black;*/
     justify-content: center;
+    background-color: aquamarine;
     
 }
 caption{
     caption-side:bottom;
+    border: 1px solid black;
 }
 .table th,td{
     padding:10px;
@@ -576,7 +653,7 @@ table td{
 
 }
 
-
+/*Mobile View*/
 @media screen and (max-width:550px){
     .branch_holder{
         display: flex;
@@ -586,40 +663,438 @@ table td{
         align-items: center;
     }
 }
+@media screen and (max-width:420px){
+    .about_half_body{
+        height: auto;
+    }
+    .table_color{
+        height: auto;
+    }
+}
+/*-----------------------------------------------------------------*/
+
 
 /*-------------Loyalty Program-------------------*/
+
+/*Temporory*/
+.loyal{
+    background: gray;
+}
 /*top heading*/
 .loyalty_title{
-    width:100%;
+    max-width:100%;
     height:125px;
     align-content:center;
-    border:2px solid red;
-    margin-bottom:50px;
-    /*background-image:linear-gradient(to right,green,lime);*/
+    border-bottom:2px solid rgb(0, 85, 17);
+    /*margin-bottom:50px;*/
+    background:linear-gradient(to right,rgba(1, 99, 4,1),rgba(0,99,4,.4))
 }
 .loyalty_title h1{
     font-size:50px;
 }
+.desc-box{
+    max-width:100%;
+    height:600px;
+    margin-bottom:50px;
+    align-content: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(Pics/sup.jpg);
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    margin:50px 0;
+    /*border: 1px solid black;*/
+}
+.desc p{
+    font-size: large;
+    width: 900px;
+    height: auto;
+    padding: 15px 0;
+    margin:0 15px;
+    line-height: 1.5;
+    border: 4px solid lime;
+    align-content: center;
+    text-align: center;
+    background: rgb(53,183,183);
+    border-radius:25px;
+    box-shadow: black 2px 2px 5px;
+    
+}
+
+/*styling programs*/
+.pro1{
+    background: gold;
+    
+}
+.pro2{
+    background: silver;
+   
+}
+.pro3{
+    background: #CD7F32;
+    
+}
+
+.pro1 ul{
+    margin-left:20px;
+    padding: 0;
+}
+.pro2 ul{
+    margin-left:20px;
+    padding:0;
+}
+.pro3 ul{
+    margin-left:20px;
+    padding:0;
+}
+
+.program_container li{
+    font-family: footer_text;
+}
+
 .program_container{
     width:100%;
-    height:400px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border:2px solid yellow;
+    height:auto;
+    /*border:2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /*margin-bottom:100px;*/
 }
 .program_container div{
     border:2px solid purple;
     border-radius:10px;
     align-content: center;
+    width:800px;
+    padding:40px;
+    transform: scale(.9);
+    
 }
-.program_container div:hover{
-    content:'';
-    background-color: rgba(255,255,255, .3);
-}
+/*button styling*/
 .link{
     text-align: center;
+    padding: 5em;
+    /*margin:0;*/
+    align-content:center;
+    /*border:2px solid black;*/
 }
-.link a{
+.link button{
+    color:blue;
+    cursor:pointer;
+    padding:15px;
+    background: transparent;
+    border-radius: 25px;
+    border-color: blue;
+    font-weight:bold; 
+    position:relative;
+    overflow:hidden;
+}
+
+.link button:hover{
+    color:white;
+}
+.button_span{
+    background:cyan;
+    width:0%;
+    height:100%;
+    border-radius:25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:0.5s;
+}
+button:hover .button_span{
+    width:100%;
+    margin:0;
+}
+
+/*mobile view*/
+@media screen and (max-width:431px){/*All Mobiles*/
+    .content>.program_container{
+        /*background-color: lime;*/
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+    .program_container>div{
+        width: 100%;
+        transform: scale(.7);
+    }
+    .desc{
+
+    }
+    .content>.desc p{
+        font-size: medium;
+        padding:20px 20px;
+        margin:0;
+    }
+    .link button{
+        /*background-color: lime;*/
+        padding:15px 15px;
+        margin:0;
+        font-size: 12px;
+    }
+    .link{
+        padding:5em 0em;
+    }
+
+}
+
+
+
+/*-----------------------------------------------------------------*/
+
+/*Dairy Product Page */
+.dairy{
+    background-color: gray;
+}
+
+.dairy_title{
+    max-width:100%;
+    height:125px;
+    align-content:center;
+    border-bottom:2px solid rgb(0, 85, 17);
+    /*margin-bottom:50px;*/
+    background:linear-gradient(to right,rgba(1, 99, 4,1),rgba(0,99,4,.4))
+}
+
+.intro_dairy{
+    /*border: 2px solid black;*/
+    margin:50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_dairy p{
+    font-size:large;
+    width:900px;
+    height:auto;
+    padding:15px;
+    border:4px solid lime;
+    border-radius:25px;
+    background:rgb(58, 183, 183);
+    align-content: center;
+    line-height: 1.5;
+    text-align: center;
+    box-shadow:black 2px 2px 2px ;
+}
+
+.intro-back-image{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(Pics/sup.jpg);
+    background-size:cover;
+    margin-bottom:0;
+    max-width:100%;
+    height:300px;
+    align-content: center;
+}
+
+.dairy_title h1{
+    font-size:50px;
+}
+
+.dairy_pro_title{
+    max-width:100%;
+    height:50px;
+    background-color: rgb(0, 0, 255);
+    padding:10px;
+    align-content: center;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    margin:0;
+}
+.dairy_pro_title h4{
+    font-family:heading;
+    font-size:xx-large;
+    color:white;
+}
+
+/*adding dariy products*/
+.dairy-pro-container{
+    max-width:100%;
+    height:auto;
+    background: white;
+}
+
+.dairy-pro-container img{
+    width:300px;
+    height: 300px;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+.dairy-pro-container h2{
+    background-color: gray;
+    display: block;
+    position: sticky;
+    left:0;
+    align-content: center;
+    text-align: center;
+    height: 25px;
+    z-index: 1;
+}
+
+.dairy-pro-container p{
+    color:black;
+    font-family: footer_text;
+    font-size: small;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.dairy-pro-container button{ /*button styling*/
+    position: relative;
+    left:calc(38%);
+    padding: 0;
+    cursor: pointer;
+    margin-bottom:10px;
+    border-radius: 25px;
+    background: lightblue;
+    
+}
+.dairy-pro-container button:hover{
+    background-color: lime;
+    box-shadow:2px 2px 10px;
+    /*transform: scale(.5em,.5em);/*important*/
+}
+.dairy-pro-container button:hover a{
+    color: white;
+}
+.dairy-pro-container a{
     text-decoration: none;
-    color:lime;
+    color:black;
+    display: block;
+    padding:10px;
+}
+/*scrollbar for fresh milk*/
+.full_fat_milk::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+  }
+.full_fat_milk::-webkit-scrollbar {
+    width: 5px;
+}
+.full_fat_milk::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #737272;
+    border: 1px solid #000; 
+}
+/*scrollbar for cheese*/
+.cheddar::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+  }
+.cheddar::-webkit-scrollbar {
+    width: 5px;
+}
+.cheddar::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #737272;
+    border: 1px solid #000; 
+}
+/*scrollbar for yogurt*/
+.yogurt_line1::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+  }
+.yogurt_line1::-webkit-scrollbar {
+    width: 5px;
+}
+.yogurt_line1::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #737272;
+    border: 1px solid #000; 
+}
+
+.fresh_milk{ /*main milk product container*/
+    width:100%;
+    display:block;
+    /*border: 2px solid yellow;*/
+    background: lime;
+    
+}
+
+.full_fat_milk div{
+    border:2px solid black;
+    margin: 10px 40px;
+    border-radius: 25px;
+    background: white;
+}
+
+.full_fat_milk{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow-x:scroll;
+    padding-bottom:50px;
+    /*flex-wrap:wrap;*/
+}
+.skim_milk{
+    display: flex;
+    justify-content: space-around;
+    max-width:100%;
+    flex-wrap:wrap;
+}
+.cheese{ /*main cheese product container*/
+    width:100%;
+    display:block;
+    /*border: 2px solid yellow;*/
+    background: lime;
+}
+.cheddar div{
+    border:2px solid black;
+    margin: 10px 40px;
+    border-radius: 25px;
+    background: white;
+}
+.swiss div{
+    border:2px solid black;
+    margin: 10px 0;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.cheddar{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow-x:scroll;
+    padding-bottom:50px;
+}
+.swiss{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.yogurt{ /*main yogurt product container*/
+    width:100%;
+    display:block;
+    /*border: 2px solid yellow;*/
+    background: cyan;
+}
+.yogurt_line1 div{
+    border:2px solid black;
+    margin: 10px 40px;
+    border-radius: 25px;
+    background: white;
+}
+.yogurt_line1{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+    padding-bottom:50px;
+}
+/*Mobile view*/
+@media screen and (max-width:710px){
+    
 }
