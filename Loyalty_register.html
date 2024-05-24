@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- manifest -->
+    <link rel="manifest" href="manifest.json">
 </head>
-<body class="loyal">
+<body>
     <header>
         <div class="nav-color">
         <div class="nav">
             <img src="Pics/Logo_no_back-new.png" alt="logo" class="nav_logo">
             <div class="nav_content">
                 <ul>
-                    <li><a href='Home.html'>Home</a></li>
+                    <li><a href='index.html'>Home</a></li>
                     <li><div class="drop_trigger">
                         <span>Products</span>
                         <div class="drop_content">
-                            <a href="Product1.html">Dairy</a>
-                            <a href="Product2.html">Vegetables</a>
-                            <a href="Product3.html">Cosmetics</a>
+                            <a href="dairy.html">Dairy</a>
+                            <a href="vegetable.html">Vegetables</a>
+                            <a href="cosmetic.html">Cosmetics</a>
                         </div>
                         </div></li>
                     <li><a href='Order.html'>Order</a></li>
@@ -30,13 +40,13 @@
         </div>
         </div>
         <div class="small_nav">
-            <ul><li><a href='Home.html'>Home</a></li>
+            <ul><li><a href='index.html'>Home</a></li>
                 <li><div class="small_drop_trigger">
                     <span>Products</span>
                     <div class="small_drop_content">
-                        <a href="Product1.html">Dairy</a>
-                        <a href="Product2.html">Vegetables</a>
-                        <a href="Product3.html">Cosmetics</a>
+                        <a href="dairy.html">Dairy</a>
+                        <a href="vegetable.html">Vegetables</a>
+                        <a href="cosmetic.html">Cosmetics</a>
                     </div>
                 </div></li>
                 <li><a href='Order.html'>Order</a></li>
@@ -60,6 +70,9 @@
                     As a member of our loyalty program, you'll enjoy a range of exclusive 
                     benefits and rewards tailored to enhance your shopping experience.</p>
             </div>
+            </div>
+            <div class="program-title">
+                <h4>Available Programs</h4>
             </div>
             <div class="program_container">
                 <div class="pro1">
@@ -94,11 +107,100 @@
                         and access to loyalty program newsletters.</li>
                     </ul>
                 </div>
-            </div>
-            <div class="link">
-                <p><a href="loyalty_form.html"><button><span class="button_span"></span>Click Here to Register for a Loyalty Program</button></a></p>
+                <hr>
             </div>
         </div>
+
+        <!-- Form for registering -->
+        <div class="program-title">
+            <h4>Register Form</h4>
+        </div>
+        <div class="form-body">
+            <div class="form_background">
+                <fieldset class="loyal_fieldset">
+                    <legend class="loyal_legend">Register</legend>
+                    <form>
+                        <hr><legend>Personal Information</legend><hr>
+                        <p><label for="name">Full Name:* </label><input type="text" maxlength='20' name="name" required></p>
+                        <p><label for="number"> Phone Number:* </label><input type="text" maxlength="10" name="telephone" required></p>
+                        <p><label for="address"> Address:* </label><input type="text" name="address" maxlength="50" required></p>
+                        <p><label for="email">Email:</label> <input type="email" name="email"></p><br>
+                        
+                        <hr><legend>Demographic Information</legend><hr>
+                        <p><label for="dob">Date of Birth:* <input type='date' maxlength="5" name="age" required></label></p><br>
+                        <p><label for=""> Gender:</label><input type="radio" name="gender" value="male" required> <label for="">Male</label><br>
+                        <input type="radio" name="gender" value="female"> <label for=""> Female</label><br>
+                        <input type="radio" name="gender" value="not_said"><label for=""> Rather Not Say</label></p><br>
+            
+                        <hr><legend>Shopping Preferences</legend><hr>
+                        <p><label for="">Select a Program:*</label>
+                            <select value="program" required>
+                                <option name="Gold">Gold</option>
+                                <option name="Silver">Silver</option>
+                                <option name="Bronze">Bronze</option>
+                            </select>
+                        </p>
+                        <p><label for="shopping_frequency"> Shopping Frequency:</label>
+                        <input type="radio" name="frequency" value="daily"> <label for="">&nbsp; Daily</label><br>
+                        <input type="radio" name="frequency" value="weekly"><label for="">&nbsp; Weekly</label><br>
+                        <input type="radio" name="frequency" value="monthly"><label for="">&nbsp; Monthly</label> <br>
+                        <input type="radio" name="frequency" value="occasionally"><label for="">&nbsp; Occasionally</label><br>
+                        </p>
+                        
+                        <p><label for="stor_location"> Prefered Store Location:</label>
+                        <input type="radio" name="store" value="Enderamulla"><label for=""> &nbsp;Enderamulla</label><br>
+                        <input type="radio" name="store" value="wattala"><label for="">&nbsp; Wattala</label></p><br>
+                        
+                        <hr><legend>Communication Preferences</legend><hr>
+                        <p><label for="comms"> Preferred Communication Method:</label>
+                        <input type="checkbox" name="communication" value="email"><label for="">&nbsp; Email</label><br>
+                        <input type="checkbox" name="communication" value="sms"><label for="">&nbsp; SMS </label><br>
+                        </p>
+                        <p><label for="market_comms"> Opt-in for Marketing Communication:</label> <br>
+                        <input type="radio" name="opt-in" value="yes"><label for=""> Yes</label><br>
+                        <input type="radio" name="opt-in" value="no"><label for=""> No</label><br>
+                        </p><br>
+                        <p><label for=""> Preferred Language:</label>
+                        <select name="language">
+                            <option value="English">English</option>
+                            <option value="Sinhala">Sinhala</option>
+                            <option value="Tamil">Tamil</option>
+                        </select>
+                        </p><br>
+            
+                        <hr><legend>Account Information</legend><hr>
+                        <p><label for="pass">Create a Password:*</label> <input type="password" name="pass" maxlength="15" required></p><br>
+                        <p></p>
+            
+                        <hr><legend>Feedback and Interests</legend><hr>
+                        <p><label for=""> Why are You Joining the Loyalty Program?</label>
+                        <input type="text" name="feedback" ></p>
+                        <p><label for=""> What Benefits are You Most Interested in?</label> 
+                        <input type="text" name="feedback" ></p><br>
+                        
+                        <hr><legend>Consent and Agreements</legend><hr>
+                        <p><label for=""> Agree to Terms and Conditions?* </label>
+                        <input type="radio" name="terms" value="yes" required> <label for=""> Yes</label> <br>
+                        <input type="radio" name="terms" value="no"> <label for=""> No</label>
+                        </p><br>
+                        <p><label for=""> Agree to Privacy & Policy?*</label>
+                        <input type="radio" name="policy" value="yes"required> <label for=""> Yes</label><br>
+                        <input type="radio" name="policy" value="no"> <label for=""> No</label>
+                        </p><br>
+                        
+                        <hr><br>
+                        <p> <input type="checkbox" name="newsletter" value="news">
+                            <label for="" class="consent"> I Would Like to Recieve News about New Deals, Offers and Special Events Via SMS and Emails.</label></p><br>
+                    
+                <button type="submit" class="sub">Submit</button>
+                </form>
+                </fieldset>
+            </div>
+        </div>
+
+
+
+        
     </main>
 
     <footer>
@@ -106,15 +208,15 @@
             <div class="foot_content">
                 <img src="Pics/Logo_no_back-new.png" alt='website logo' class="foot_logo">
                 <p class="faq"><u>FAQ</u></br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                repellat fuga sint sit laborum praesentium nisi incidunt
-                distinctio alias.</p>
+                    What delivery options are available? <br>
+                    How do I place an order online? <br>
+                    Do you offer same-day delivery?</p>
 
                 <div class="socials">
-                    <img src="Pics/facebook logo.webp"alt='icon' class="img1">
-                    <img src="Pics/Instagram_logo_2016.svg.webp" alt="icon2" class="img2">
-                    <img src="Pics/mail3.jpg" alt="icon3" class="img3">
-                    <img src="Pics/Phone_icon.png" alt="icon4" class="img4">
+                    <a href='https://www.facebook.com/profile.php?id=100089603665671' target="_blank"><img src="Pics/facebook logo.webp"alt='icon' class="img1"></a>
+                    <a href='https://www.instagram.com/dha_quiet_kid/' target="_blank"><img src="Pics/Instagram_logo_2016.svg.webp" alt="icon2" class="img2"></a>
+                    <a href="mailto:"><img src="Pics/mail3.jpg" alt="icon3" class="img3"></a>
+                    <a href='tel:'><img src="Pics/Phone_icon.png" alt="icon4" class="img4"></a>
                     <p class="para1"><a href='https://www.facebook.com/profile.php?id=100089603665671' target="_blank">Facebook</a></p>
                     <p class="para2"><a href='https://www.instagram.com/dha_quiet_kid/' target="_blank">Instagram</a></p>
                     <p class="para3"><a href="mailto:">Mail</a></p>

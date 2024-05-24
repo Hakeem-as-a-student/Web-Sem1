@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Page</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- manifest -->
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <header>
@@ -12,13 +22,13 @@
             <img src="Pics/Logo_no_back-new.png" alt="logo" class="nav_logo">
         <div class="nav_content">
             <ul>
-                <li><a href='Home.html'>Home</a></li>
+                <li><a href='index.html'>Home</a></li>
                 <li><div class="drop_trigger">
                     <span>Products</span>
                     <div class="drop_content">
-                        <a href="Product1.html">Dairy</a>
-                        <a href="Product2.html">Vegetables</a>
-                        <a href="Product3.html">Cosmetics</a>
+                        <a href="dairy.html">Dairy</a>
+                        <a href="vegetable.html">Vegetables</a>
+                        <a href="cosmetic.html">Cosmetics</a>
                     </div>
                     </div></li>
                 <li><a href='Order.html'>Order</a></li>
@@ -28,13 +38,13 @@
         </div>
         </div>
         <div class="small_nav">
-            <ul><li><a href='Home.html'>Home</a></li>
+            <ul><li><a href='index.html'>Home</a></li>
                 <li><div class="small_drop_trigger">
                     <span>Products</span>
                     <div class="small_drop_content">
-                        <a href="Product1.html">Dairy</a>
-                        <a href="Product2.html">Vegetables</a>
-                        <a href="Product3.html">Cosmetics</a>
+                        <a href="dairy.html">Dairy</a>
+                        <a href="vegetable.html">Vegetables</a>
+                        <a href="cosmetic.html">Cosmetics</a>
                     </div>
                 </div></li>
                 <li><a href='Order.html'>Order</a></li>
@@ -45,7 +55,465 @@
     </header>
 
     <main>
-        <img src="Pics/temp.png" width='100%' height='100%'>
+        <div class="order_title">
+            <h1>Order Page</h1>
+        </div>
+        <div class="intro-order-image">
+            <div class="intro_order">
+            </div>
+        </div>
+        <div class="order-form-image">
+            <div class="order-form-title 1">
+                <h4>Dairy Products</h4>
+            </div>
+            <!-- <div class="form-container"> -->
+            <fieldset class="order-form-dairy">
+                <form action="" method="post" class="form 1">
+                    <hr>
+                    <legend> Choose Available Prodcuts:</legend><hr>
+                    <hr><legend>Fresh Milk</legend>
+                    <hr>
+                    <p><input type="checkbox" name="dairy" value=""> <label for=""> Bonlac Skim Milk 400g</label> <br>
+                    <label for="">Select Quantity:</label><select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                    </p>
+
+                    <p><input type="checkbox" name="dairy" value=""> <label for=""> Anchor Full Fat Milk 1000ml</label> <br>
+                        <label for="">Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                        </p>
+
+                    <p><input type="checkbox" name="dairy" value=""> <label for=""> Ambewella Full Fat Milk 1000ml</label> <br>
+                    <label for="">Select Quantity: </label> <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="dairy" value=""> <label for="">Kotmale Full Fat Milk 1000ml </label><br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  
+                    <p>
+                        <input type="checkbox" name="dairy" value=""> <label for=""> Kotmale Full Fat Milk 1000ml</label> <br>
+                        <label for=""> Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="dairy" value=""> <label for="">Kotmale Non-Fat Milk 1000ml</label><br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="dairy" value=""> <label for=""> Rich Life Non-Fat Milk 1000ml</label> <br>
+                        <label for=""> Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="dairy" value=""> <label for="">Ambewella No Fat Milk 1000ml </label><br>
+                        <label for=""> Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p><br>
+
+                    <hr><legend>Cheese</legend>
+                    <hr>
+                    <p><input type="checkbox" name="dairy" value=""> <label for="">KRAFT Cheese Slices 250g</label> <br>
+                        <label for="">Select Quantity:</label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                        </p>
+    
+                        <p><input type="checkbox" name="dairy" value=""> <label for=""> KRAFT Cheddar Cheese 100g</label> <br>
+                            <label for="">Select Quantity:</label> <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                            </p>
+    
+                        <p><input type="checkbox" name="dairy" value=""> <label for=""> Kotmale Cheddar Cheese 100g</label> <br>
+                        <label for="">Select Quantity: </label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                        </p>
+    
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for="">KRAFT Cheddar Cheese 250g </label><br>
+                            <label for=""> Select Quantity: </label><select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p>  
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for=""> Kotmale Swiss Cheese 200g</label> <br>
+                            <label for=""> Select Quantity:</label> <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for=""> Kotmale Swiss Cheese 200g </label><br>
+                            <label for=""> Select Quantity: </label><select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for=""> Rich Life Swiss Cheese 200g</label> <br>
+                            <label for=""> Select Quantity:</label> <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for="">Rich Life Cooking Cheese 200g </label><br>
+                            <label for=""> Select Quantity:</label> <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p><br>
+
+
+                    <hr><legend>Yogurt</legend>
+                    <hr>
+                    <p><input type="checkbox" name="dairy" value=""> <label for=""> Rich Life Yogurt</label> <br>
+                        <label for="">Select Quantity:</label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                        </p>
+    
+                        <p><input type="checkbox" name="dairy" value=""> <label for=""> Rich Life Set Yogurt</label> <br>
+                            <label for="">Select Quantity:</label> <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                            </p>
+    
+                        <p><input type="checkbox" name="dairy" value=""> <label for=""> Ambewella Set Yogurt</label> <br>
+                        <label for="">Select Quantity: </label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                        </p>
+    
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for="">Kotmale Set Yogurt</label><br>
+                            <label for=""> Select Quantity: </label><select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p>  
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for=""> Ambewella Non-Fat Yogurt</label> <br>
+                            <label for=""> Select Quantity:</label> <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for=""> Anchor Furit Yogurt</label><br>
+                            <label for=""> Select Quantity: </label><select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for=""> Rich Life Mixed Berry</label> <br>
+                            <label for=""> Select Quantity:</label> <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="dairy" value=""> <label for="">Rich Life Set Yogurt 500g </label><br>
+                            <label for=""> Select Quantity:</label> <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </p><br>
+
+
+                </form>
+            </fieldset>
+            <div class="order-form-title 2">
+                <h4>Vegetables</h4>
+            </div>
+            <fieldset class="order-form-vege">
+                <form action="" method="post" class="form 2">
+                    <hr><legend>Choose Available Products:</legend><hr>
+                    <p>
+                        <input type="checkbox" name="vege" value=""> <label for="">Batana 500g</label>  <br>
+                        <label for=""> Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p> 
+                    <p>
+                        <input type="checkbox" name="vege" value=""> <label for="">Cabbage 100g </label><br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  
+                    <p>
+                        <input type="checkbox" name="vege" value=""> <label for=""> Cucmber 250g </label><br>
+                        <label for=""> Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="vege" value=""> <label for=""> Garlic 200g</label> <br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="vege" value=""> <label for=""> Potato 500g</label> <br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  
+                    <p>
+                        <input type="checkbox" name="vege" value=""> <label for="">Red Onion 200g </label><br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p> 
+                    <p>
+                        <input type="checkbox" name="vege" value=""> <label for="">Sweet Potato 500g</label> <br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  
+                    <p>
+                        <input type="checkbox" name="vege" value=""> <label for=""> Tomato 250g</label> <br>
+                        <label for=""> Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  <br>
+
+                </form>
+            </fieldset>
+
+            <div class="order-form-title 2">
+                <h4>Cosmetics</h4>
+            </div>
+            <fieldset class="order-form-cos">
+                <form action="" method="post" class="form 3">
+                    <hr><legend>Choose Available Products: </legend> <hr>
+                    <p>
+                        <input type="checkbox" name="cos" value=""> <label for=""> Dove Oxygen Moisture </label><br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  
+                    <p>
+                        <input type="checkbox" name="cos" value=""> <label for="">Dove Hair Growth Ritual</label> <br>
+                        <label for=""> Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p> 
+                    <p>
+                        <input type="checkbox" name="cos" value=""> <label for=""> Nivea Pearl & Beauty Cream</label> <br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="cos" value=""> <label for=""> Nivea  Body Spray</label> <br>
+                        <label for="">Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  
+                    <p>
+                        <input type="checkbox" name="cos" value=""> <label for="">Olay Super Serum</label><br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p> 
+                    <p>
+                        <input type="checkbox" name="cos" value=""> <label for=""> Olay Serum Slugging Mask</label><br>
+                       <label for="">  Select Quantity:</label> <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p> 
+                    <p>
+                        <input type="checkbox" name="cos" value=""> <label for=""> Pond's Pure Detox Cream</label> <br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  
+                    <p>
+                        <input type="checkbox" name="cos" value=""> <label for=""> Pond's Pimple Clear</label> <br>
+                        <label for=""> Select Quantity: </label><select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </p>  
+
+                </form>
+            </fieldset>
+        <div class="cart-div">
+            <form action="">
+            <button type="reset" class="cart">Reset</button>
+            <button type="submit" class="cart"> Add to Cart</button>
+            </form>
+        </div>
+        </div>
+        
+
+        
+
     </main>
 
     <footer>
@@ -53,17 +521,17 @@
             <div class="foot_content">
                 <img src="Pics/Logo_no_back-new.png" alt='website logo' class="foot_logo">
                 <p class="faq"><u>FAQ</u></br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                repellat fuga sint sit laborum praesentium nisi incidunt
-                distinctio alias.</p>
+                    What delivery options are available? <br>
+                    How do I place an order online? <br>
+                    Do you offer same-day delivery?</p>
 
                 <div class="socials">
-                    <img src="Pics/facebook logo.webp"alt='icon' class="img1">
-                    <img src="Pics/Instagram_logo_2016.svg.webp" alt="icon2" class="img2">
-                    <img src="Pics/mail3.jpg" alt="icon3" class="img3">
-                    <img src="Pics/Phone_icon.png" alt="icon4" class="img4">
-                    <p class="para1"><a href=''>Facebook</a></p>
-                    <p class="para2"><a href=''>Instagram</a></p>
+                    <a href='https://www.facebook.com/profile.php?id=100089603665671' target="_blank"><img src="Pics/facebook logo.webp"alt='icon' class="img1"></a>
+                    <a href='https://www.instagram.com/dha_quiet_kid/' target="_blank"><img src="Pics/Instagram_logo_2016.svg.webp" alt="icon2" class="img2"></a>
+                    <a href="mailto:"><img src="Pics/mail3.jpg" alt="icon3" class="img3"></a>
+                    <a href='tel:'><img src="Pics/Phone_icon.png" alt="icon4" class="img4"></a>
+                    <p class="para1"><a href='https://www.facebook.com/profile.php?id=100089603665671' target="_blank">Facebook</a></p>
+                    <p class="para2"><a href='https://www.instagram.com/dha_quiet_kid/' target="_blank">Instagram</a></p>
                     <p class="para3"><a href="mailto:">Mail</a></p>
                     <p class="para4"><a href='tel:'>Phone</a></p>
             </div>

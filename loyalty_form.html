@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
+    <div class="form_background">
     <fieldset>
         <legend>Title of the form</legend>
         <form>
             <hr><legend>Personal Information</legend><hr>
-            <p>Full Name:* <input type="text" maxlength='20' name="name" ></p>
-            <p>Phone Number:* <input type="text" maxlength="10" name="telephone"></p>
-            <p>Address:* <input type="text" name="address" maxlength="50" ></p>
-            <p>Email: <input type="email" name="email"></p>
+            <p><label for="name">Full Name:* </label><input type="text" maxlength='20' name="name" ></p>
+            <p><label for="number"> Phone Number:* </label><input type="text" maxlength="10" name="telephone"></p>
+            <p><label for="address"> Address:* </label><input type="text" name="address" maxlength="50" ></p>
+            <p><label for="email">Email:</label> <input type="email" name="email"></p><br>
             
             <hr><legend>Demographic Information</legend><hr>
-            <p>Date of Birth:* <input type='date' maxlength="5" name="age" required></p>
-            <p>Gender: <input type="radio" name="gender" value="male"> Male
+            <p><label for="dob">Date of Birth:* <input type='date' maxlength="5" name="age" required></label></p><br>
+            <p>Gender:<input type="radio" name="gender" value="male">&nbsp;Male
             <input type="radio" name="gender" value="female"> Female
             <input type="radio" name="gender" value="not_said"> Rather Not Say</p>
 
@@ -30,22 +31,24 @@
                     <option name="Bronze">Bronze</option>
                 </select>
             </p>
-            <p>Shopping Frequency: <br>
-            <input type="radio" name="frequency" value="daily"> Daily<br>
+            <p><label for="shopping_frequency"> Shopping Frequency:</label> <br>
+            <input type="radio" name="frequency" value="daily">  Daily<br>
             <input type="radio" name="frequency" value="weekly"> Weekly<br>
-            <input type="radio" name="frequency" value="monthly"> Monthly<br>
+            <input type="radio" name="frequency" value="monthly"> Monthly <br>
             <input type="radio" name="frequency" value="occasionally"> Occasionally<br>
             </p>
             
-            <p>Prefered Store Location: <input type="radio" name="store" value="Enderamulla"> Enderamulla
-            <input type="radio" name="store" value="wattala"> Wattala</p>
+            <p><label for="stor_location"> Prefered Store Location:</label><br>
+            
+            <input type="radio" name="store" value="Enderamulla"> Enderamulla
+            <input type="radio" name="store" value="wattala">  Wattala</p>
             
             <hr><legend>Communication Preferences</legend><hr>
-            <p>Preferred Communication Method: <br>
-            <input type="checkbox" name="communication" value="email"> Email <br>
+            <p><label for="comms"> Preferred Communication Method:</label> <br>
+            <input type="checkbox" name="communication" value="email"> Email<br>
             <input type="checkbox" name="communication" value="sms"> SMS <br>
             </p>
-            <p>Opt-in for Marketing Communication: <br>
+            <p><label for="market_comms"> Opt-in for Marketing Communication:</label> <br>
             <input type="radio" name="opt-in" value="yes"> Yes<br>
             <input type="radio" name="opt-in" value="no"> No<br>
             </p>
@@ -58,14 +61,14 @@
             </p>
 
             <hr><legend>Account Information</legend><hr>
-            <p>Create a Password: <input type="password" name="pass" maxlength="15"></p>
+            <p><label for="pass">Create a Password:</label> <input type="password" name="pass" maxlength="15"></p><br>
             <p></p>
 
             <hr><legend>Feedback and Interests</legend><hr>
-            <p>Why are You Joining the Loyalty Program? <br><br>
+            <p><label for=""> Why are You Joining the Loyalty Program?</label>
             <input type="text" name="feedback" ></p>
-            <p>What Benefits are You Most Interested in? <br><br>
-            <input type="text" name="feedback" ></p>
+            <p><label for=""> What Benefits are You Most Interested in?</label> 
+            <input type="text" name="feedback" ></p><br>
             
             <hr><legend>Consent and Agreements</legend><hr>
             <p>Agree to Terms and Conditions?* <br><br>
@@ -80,9 +83,11 @@
             <hr>
             <p><input type="checkbox" name="newsletter" value="news">
                 I Would Like to Recieve News about New Deals, Offers and Special Events Via SMS and Emails.</p>
-        </form>
+        
+    <button class="back"><a href="Loyalty_register.html"> Go Back</a></button>
+    <button type="submit" class="sub">Submit</button>
+    </form>
     </fieldset>
-    <button class="back"><a href="Loyalty_register.html">&gt; Go Back</a></button>
-    <button class="submit"><a href="">Submit</a></button>
+    </div>
 </body>
 </html>
