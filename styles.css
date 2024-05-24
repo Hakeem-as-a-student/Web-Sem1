@@ -33,7 +33,8 @@ p{
 }
 
 /*mobile viewport styling*/
-html{
+@media screen and (max-width:500px) {
+   html{
     height: -webkit-fill-available;
 }
 
@@ -49,7 +50,9 @@ body{
 main{
     flex: 1;
     overflow: scroll;
+} 
 }
+
 /*configuring of navigation panel*/
 .nav{
     width:100%;
