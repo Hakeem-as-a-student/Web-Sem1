@@ -33,25 +33,7 @@ p{
 }
 
 /*mobile viewport styling*/
-@media screen and (max-width:500px) {
-   html{
-    height: -webkit-fill-available;
-}
 
-body{
-    display: flex;
-    flex-direction: column;
-    max-width:1440px;
-    margin: 0 auto;
-    height: 100vh;
-    height: -webkit-fill-available;
-}
-
-main{
-    flex: 1;
-    overflow: scroll;
-} 
-}
 
 /*configuring of navigation panel*/
 .nav{
