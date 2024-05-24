@@ -31,6 +31,25 @@ p{
     color:rgba(255, 255, 255, 0.825);
     margin-left:40px;
 }
+
+/*mobile viewport styling*/
+html{
+    height: -webkit-fill-available;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    max-width:1440px;
+    margin: 0 auto;
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+
+main{
+    flex: 1;
+    overflow: scroll;
+}
 /*configuring of navigation panel*/
 .nav{
     width:100%;
