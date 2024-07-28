@@ -1,0 +1,191 @@
+/*Configuring default settings for webpage*/
+*{
+    margin:0;
+    padding:0;
+
+}
+/*Functional Order Page*/
+
+/*table styles*/
+.summary{
+    /* border-color: red; */
+    border-collapse:collapse;
+}
+
+/*fruit container*/
+.fruit-container{
+    background-color: #023746;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+/*input check style*/
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+}
+input[type="checkbox"]:after {
+    position:absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    color: #478bfb;
+    content: "\f111";
+    font-size: 18px;
+    right: 10px;
+    top:-5px;
+}
+input[type="checkbox"]:checked::after{
+    font-weight: 900;
+    content:"\f058";
+    color: #478bfb;
+
+}
+.fruit{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px; 
+}
+
+.fruit img{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.fruit p{
+    font-size: 15px;
+    color:black;
+    margin: auto 50px;
+    
+}
+/*vege container*/
+.vege-container{
+    background-color: #00c6ff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+    
+}
+.veg{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px; 
+}
+.veg img{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    
+}
+.veg p{
+    font-size: 15px;
+    color:black;
+    margin: auto 50px;
+    /* border: 1px solid black; */
+}
+
+/*dairy container*/
+.dairy-container{
+    background-color: blue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+    
+}
+.dairy{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px; 
+}
+.dairy img{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    
+}
+.dairy p{
+    font-size: 15px;
+    color:black;
+    margin: auto 50px;
+    text-wrap: nowrap;
+    /* border: 1px solid black; */
+}
+
+/*meat container*/
+.meat-container{
+    background-color: rgb(74, 74, 250);
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.meat{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px; 
+}
+.meat img{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+}
+.meat p{
+    font-size: 15px;
+    color:black;
+    margin: auto 50px;
+    
+}
+
+/*baked container*/
+.baked-container{
+    background-color: rgb(48, 48, 198);
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.baked{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px; 
+}
+.baked img{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+}
+.baked p{
+    font-size: 15px;
+    color:black;
+    margin: auto 50px;
+    
+}
