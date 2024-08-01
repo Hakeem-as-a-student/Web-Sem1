@@ -125,7 +125,7 @@ function addTable(listName,bodyName,btn,itemList,costNum,resetList){//checkIDLis
 
         for(let item of resetList){
             let itemValue=item;
-            
+
             for(let listIndex=0; listIndex<6; listIndex++){
                 if (itemValue==itemList[listIndex].id && itemList[listIndex].count==0){
                     costNum+=itemList[listIndex].price;
