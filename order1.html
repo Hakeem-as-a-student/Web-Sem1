@@ -10,7 +10,7 @@
     <script src="script.js" defer></script>
 </head>
 
-<body>
+<body> 
     <header>
         <div class="nav">
             <img src="Pics/Logo_no_back-new.png" alt="logo" class="nav_logo">
@@ -25,7 +25,7 @@
                     <a href="cosmetic.html">Cosmetics</a>
                 </div>
             </div></li>
-            <li><a href='Order.html'>Order</a></li>
+            <li><a href='order1.html'>Order</a></li>
             <li><a href='Loyalty_register.html'>Loyalty Program</a></li>
             <li><a href='About.html'>About us</a></li>
         </ul>
@@ -51,61 +51,74 @@
     <main>
     <section class="fruit_class"><!--kgs-->
         <form>
+            <h1>Fruits</h1>
         <div class="fruit-container">
             
             <div class="fruit 1">
-                <input type="checkbox" id="fruit1" onclick="addList(this,itemList1,kg1)">
+                <div class="f-top 1">
                 <label for="fruit1">
+                <input type="checkbox" id="fruit1" onclick="addList(this,itemList1,kg1,'k')">
                 <img src="Pics/Fruits/no-back/apples.png" alt="" >
                 </label>
-                <p> </p>
-                <p>Rs.100</p>
-                <p><label for="kg1">Quantity: </label><input type="number" id="kg1" max="10" value="1" min="1"></p>
+                </div>
+                <p>Apple 1kg</p>
+                <p>Rs.600</p>
+                <p><label for="kg1">Kgs: </label><input type="number" id="kg1" max="10" value="1" min="1"></p>
             </div>
-            <div class="fruit 22">
-                <input type="checkbox" id="fruit2" onclick="addList(this,itemList1,kg2)">
+            <div class="fruit 2">
+                <div class="f-top 2">
+                <input type="checkbox" id="fruit2" onclick="addList(this,itemList1,kg2,'k')">
                 <label for="fruit2">
                 <img src="Pics/Fruits/no-back/banana1-removebg-preview.png" alt="" >
                 </label>
-                <p> </p>
-                <p>Rs.100</p>
-                <p><label for="kg2">Quantity: </label><input type="number" id="kg2" max="10" value="1" min="1"></p>
+                </div>
+                <p>Banana 1kg</p>
+                <p>Rs.250</p>
+                <p><label for="kg2">Kgs: </label><input type="number" id="kg2" max="10" value="1" min="1"></p>
             </div>
             <div class="fruit 3">
-                <input type="checkbox" id="fruit3" onclick="addList(this,itemList1,kg3)">
+                <div class="f-top 3">
+                <input type="checkbox" id="fruit3" onclick="addList(this,itemList1,kg3,'k')">
                 <label for="fruit3">
                 <img src="Pics/Fruits/no-back/dragonfruit_red-1561254739488-removebg-preview.png" alt="" >
                 </label>
-                <p> </p>
-                <p>Rs.100</p>
-                <p><label for="kg3">Quantity: </label><input type="number" id="kg3" max="10" value="1" min="1"></p>
+                </div>
+                <p>Dragon Fruit 1kg</p>
+                <p>Rs.1100</p>
+                <p><label for="kg3">Kgs: </label><input type="number" id="kg3" max="10" value="1" min="1"></p>
             </div>
             <div class="fruit 4">
-                <input type="checkbox" id="fruit4" onclick="addList(this,itemList1,kg4)">
+                <div class="f-top 4">
+                <input type="checkbox" id="fruit4" onclick="addList(this,itemList1,kg4,'k')">
                 <label for="fruit4">
                 <img src="Pics/Fruits/no-back/grapes.png" alt="" >
                 </label>
-                <p> </p>
-                <p>Rs.100</p>
-                <p><label for="kg4">Quantity: </label><input type="number" id="kg4" max="10" value="1" min="1"></p>
+                </div>
+                <p>Grapes 1kg</p>
+                <p>Rs.700</p>
+                <p><label for="kg4">Kgs: </label><input type="number" id="kg4" max="10" value="1" min="1"></p>
             </div>
             <div class="fruit 5">
-                <input type="checkbox" id="fruit5" onclick="addList(this,itemList1,kg5)">
+                <div class="f-top 5">
+                <input type="checkbox" id="fruit5" onclick="addList(this,itemList1,kg5,'k')">
                 <label for="fruit5">
                 <img src="Pics/Fruits/no-back/orange.webp" alt="" >
                 </label>
-                <p> </p>
-                <p>Rs.100</p>
-                <p><label for="kg5">Quantity: </label><input type="number" id="kg5" max="10" value="1" min="1"></p>
+                </div>
+                <p>Orange 1kg</p>
+                <p>Rs.1000</p>
+                <p><label for="kg5">Kgs: </label><input type="number" id="kg5" max="10" value="1" min="1"></p>
             </div>
             <div class="fruit 6">
-                <input type="checkbox" id="fruit6" onclick="addList(this,itemList1,kg6)">
+                <div class="f-top 6">
+                <input type="checkbox" id="fruit6" onclick="addList(this,itemList1,kg6,'k')">
                 <label for="fruit6">
                 <img src="Pics/Fruits/no-back/tomato.png" alt="" >
-                </label>    
-                <p> </p>
-                <p>Rs.100</p>
-                <p><label for="kg6">Quantity: </label><input type="number" id="kg6" max="10" value="1" min="1"></p>
+                </label>
+                </div>    
+                <p>Tomato 1kg</p>
+                <p>Rs.640</p>
+                <p><label for="kg6">Kgs: </label><input type="number" id="kg6" max="10" value="1" min="1"></p>
             </div>
             
         </div>
@@ -114,124 +127,156 @@
 
     <section class="vege"><!--kgs-->
     <form>
+        <h1>Vegetables</h1>
     <div class="vege-container">
 
             
 
         <div class="veg 1">
-            <input type="checkbox" id="vege1" onclick="addList(this,itemList2,kg7)">
+            <div class="v-top 1">
+            <input type="checkbox" id="vege1" onclick="addList(this,itemList2,kg7,'k')">
             <label for="vege1">
             <img src="Pics/Vege/no-back/Batana-removebg-preview.png" alt="">
             </label>
-                <p>Batana 500g</p>
-                <p>Rs.250</p>
-                <p><label for="kg7">Quantity: </label><input type="number" id="kg7" max="10" value="1" min="1"></p>
+            </div>
+            <p>Batana 1kg</p>
+            <p>Rs.450</p>
+            <p><label for="kg7">Kgs: </label><input type="number" id="kg7" max="10" value="1" min="1"></p>
         </div>
+
         <div class="veg 2">
-            <input type="checkbox" id="vege2" onclick="addList(this,itemList2,kg8)">
+            <div class="v-top 2">
+            <input type="checkbox" id="vege2" onclick="addList(this,itemList2,kg8,'k')">
             <label for="vege2">
             <img src="Pics/Vege/no-back/cabbage-removebg-preview.png" alt="">
             </label>
-            <p>Cabbage 100g</p>
-            <p>Rs.80</p>
-            <p><label for="kg8">Quantity: </label><input type="number" id="kg8" max="10" value="1" min="1"></p>
+            </div>
+            <p>Cabbage 1kg</p>
+            <p>Rs.400</p>
+            <p><label for="kg8">Kgs: </label><input type="number" id="kg8" max="10" value="1" min="1"></p>
         </div>
+
         <div class="veg 3">
-            <input type="checkbox" id="vege3" onclick="addList(this,itemList2,kg9)">
+            <div class="v-top 3">
+            <input type="checkbox" id="vege3" onclick="addList(this,itemList2,kg9,'k')">
             <label for="vege3">
             <img src="Pics/Vege/no-back/cucumber-removebg-preview.png" alt="">
             </label>
-            <p>Cucmber 250g</p>
-            <p>Rs.100</p>
-            <p><label for="kg9">Quantity: </label><input type="number" id="kg9" max="10" value="1" min="1"></p>
+            </div>
+            <p>Cucmber 1kg</p>
+            <p>Rs.200</p>
+            <p><label for="kg9">Kgs: </label><input type="number" id="kg9" max="10" value="1" min="1"></p>
         </div>
+
         <div class="veg 4">
-            <input type="checkbox" id="vege4" onclick="addList(this,itemList2,kg10)">
+            <div class="v-top 4">
+            <input type="checkbox" id="vege4" onclick="addList(this,itemList2,kg10,'k')">
             <label for="vege4">
             <img src="Pics/Vege/no-back/garlic.png" alt="">
             </label>
-            <p>Garlic 200g</p>
-            <p>Rs.90</p>
-            <p><label for="kg10">Quantity: </label><input type="number" id="kg10" max="10" value="1" min="1"></p>
+            </div>
+            <p>Garlic 1kg</p>
+            <p>Rs.950</p>
+            <p><label for="kg10">Kgs: </label><input type="number" id="kg10" max="10" value="1" min="1"></p>
         </div>
+
         <div class="veg 5">
-            <input type="checkbox" id="vege5" onclick="addList(this,itemList2,kg11)">
+            <div class="v-top 5">
+            <input type="checkbox" id="vege5" onclick="addList(this,itemList2,kg11,'k')">
             <label for="vege5">
             <img src="Pics/Vege/no-back/potato-removebg-preview.png" alt="">
             </label>
-            <p>Potato 500g</p>
-            <p>Rs.100</p>
-            <p><label for="kg11">Quantity: </label><input type="number" id="kg11" max="10" value="1" min="1"></p>
+            </div>
+            <p>Potato 1kg</p>
+            <p>Rs.500</p>
+            <p><label for="kg11">Kgs: </label><input type="number" id="kg11" max="10" value="1" min="1"></p>
         </div>
+
         <div class="veg 6">
-            <input type="checkbox" id="vege6" onclick="addList(this,itemList2,kg12)">
+            <div class="v-top 6">
+            <input type="checkbox" id="vege6" onclick="addList(this,itemList2,kg12,'k')">
             <label for="vege6">
             <img src="Pics/Vege/no-back/red_onion-removebg-preview.png" alt="">
             </label>
-            <p>Red Onion 200g</p>
-            <p>Rs.90</p>
-            <p><label for="kg12">Quantity: </label><input type="number" id="kg12" max="10" value="1" min="1"></p>
+            </div>
+            <p>Red Onion 1kg</p>
+            <p>Rs.400</p>
+            <p><label for="kg12">Kgs: </label><input type="number" id="kg12" max="10" value="1" min="1"></p>
         </div>
+
     </div>
     </form>
     </section>
 
     <section class="dairy_class"><!--qty-->
     <form>
+        <h1>Dairy</h1>
         <div class="dairy-container">
             
             <div class="dairy 1">
-                <input type="checkbox" id="dairy1" onclick="addList(this,itemList3,qty1)">
+                <div class="d-top 1">
+                <input type="checkbox" id="dairy1" onclick="addList(this,itemList3,qty1,'q')">
                 <label for="dairy1">
                 <img src="Pics/Dairy/no-back/fresh1.png" alt="" >
                 </label>
-                <p>Anchor Full Fat Milk 1000ml</p>
-                <p>Rs.400.00</p>
+                </div>
+                <p>Anchor Full Fat Milk 1l</p>
+                <p>Rs.500</p>
                 <p><label for="qty1">Quantity: </label><input type="number" id="qty1" max="10" value="1" min="1"></p>
             </div>
             <div class="dairy 2">
-                <input type="checkbox" id="dairy2" onclick="addList(this,itemList3,qty2)">
+                <div class="d-top 2">
+                <input type="checkbox" id="dairy2" onclick="addList(this,itemList3,qty2,'q')">
                 <label for="dairy2">
                 <img src="Pics/Dairy/no-back/fresh2.png" alt="" >
                 </label>
+                </div>
                 <p>Ambewella Full Fat Milk 1000ml</p>
-                <p>Rs.500.00</p>
+                <p>Rs.550.00</p>
                 <p><label for="qty2">Quantity: </label><input type="number" id="qty2" max="10" value="1" min="1"></p>
             </div>
             <div class="dairy 3">
-                <input type="checkbox" id="dairy3" onclick="addList(this,itemList3,qty3)">
+                <div class="d-top 3">
+                <input type="checkbox" id="dairy3" onclick="addList(this,itemList3,qty3,'q')">
                 <label for="dairy3">
                 <img src="Pics/Dairy/no-back/fresh3.png" alt="" >
                 </label>
+                </div>
                 <p>Kotmale Full Fat Milk 1000ml</p>
                 <p>Rs.450.00</p>
                 <p><label for="qty3">Quantity: </label><input type="number" id="qty3" max="10" value="1" min="1"></p>
             </div>
             <div class="dairy 4">
-                <input type="checkbox" id="dairy4" onclick="addList(this,itemList3,qty4)">
+                <div class="d-top 4">
+                <input type="checkbox" id="dairy4" onclick="addList(this,itemList3,qty4,'q')">
                 <label for="dairy4">
                 <img src="Pics/Cheese/no-back/cheddar1.png" alt="">
                 </label>
+                </div>
                 <p>KRAFT Cheddar Cheese Slices 250g </p>
-                <p>Rs.450</p>
+                <p>Rs.600</p>
                 <p><label for="qty4">Quantity: </label><input type="number" id="qty4" max="10" value="1" min="1"></p>
             </div>
             <div class="dairy 5">
-                <input type="checkbox" id="dairy5" onclick="addList(this,itemList3,qty5)">
+                <div class="d-top 5">
+                <input type="checkbox" id="dairy5" onclick="addList(this,itemList3,qty5,'q')">
                 <label for="dairy5">
                 <img src="Pics/Cheese/no-back/cheddar2.png" alt="">
                 </label>
-                <p>KRAFT Cheddar Cheese 100g</p>
-                <p>Rs.250</p>
+                </div>
+                <p>KRAFT Cheddar Cheese 250g</p>
+                <p>Rs.1000</p>
                 <p><label for="qty5">Quantity: </label><input type="number" id="qty5" max="10" value="1" min="1"></p>
             </div>
             <div class="dairy 6">
-                <input type="checkbox" id="dairy6" onclick="addList(this,itemList3,qty6)">
+                <div class="d-top 6">
+                <input type="checkbox" id="dairy6" onclick="addList(this,itemList3,qty6,'q')">
                 <label for="dairy6">
                 <img src="Pics/Cheese/no-back/cheddar3.png" alt="">
                 </label>
-                <p>Kotmale Cheddar Cheese 100g</p>
-                <p>Rs.200</p>
+                </div>
+                <p>Kotmale Cheddar Cheese 250g</p>
+                <p>Rs.1100</p>
                 <p><label for="qty6">Quantity: </label><input type="number" id="qty6" max="10" value="1" min="1"></p>
             </div>
         </div>
@@ -240,61 +285,74 @@
 
     <section class="meat&seafood"><!--kgs-->
     <form>
+        <h1>Meat & SeaFood</h1>
         <div class="meat-container">
             
 
             <div class="meat 1">
-                <input type="checkbox" id="meat1" onclick="addList(this,itemList4,kg13)">
+                <div class="m-top 1">
+                <input type="checkbox" id="meat1" onclick="addList(this,itemList4,kg13,'k')">
                 <label for="meat1">
                 <img src="Pics/meat/no-back/beef-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Beef 1kg</p>
+                <p>Rs.2200 </p>
                 <p><label for="kg13">Quantity: </label><input type="number" id="kg13" max="10" value="1" min="1"></p>
             </div>
             <div class="meat 2">
-                <input type="checkbox" id="meat2" onclick="addList(this,itemList4,kg14)">
+                <div class="m-top 2">
+                <input type="checkbox" id="meat2" onclick="addList(this,itemList4,kg14,'k')">
                 <label for="meat2">
                 <img src="Pics/meat/no-back/breast-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Chicken Breast 1kg</p>
+                <p>Rs.1980 </p>
                 <p><label for="kg14">Quantity: </label><input type="number" id="kg14" max="10" value="1" min="1"></p>
             </div>
             <div class="meat 3">
-                <input type="checkbox" id="meat3" onclick="addList(this,itemList4,kg15)">
+                <div class="m-top 3">
+                <input type="checkbox" id="meat3" onclick="addList(this,itemList4,kg15,'k')">
                 <label for="meat3">
                 <img src="Pics/meat/no-back/octo-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Octopus 1kg </p>
+                <p>Rs.1350 </p>
                 <p><label for="kg15">Quantity: </label><input type="number" id="kg15" max="10" value="1" min="1"></p>
             </div>
             <div class="meat 4">
-                <input type="checkbox" id="meat4" onclick="addList(this,itemList4,kg16)">
+                <div class="m-top 4">
+                <input type="checkbox" id="meat4" onclick="addList(this,itemList4,kg16,'k')">
                 <label for="meat4">
                 <img src="Pics/meat/no-back/prawn-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Prawns Medium</p>
+                <p>Rs.1470 </p>
                 <p><label for="kg16">Quantity: </label><input type="number" id="kg16" max="10" value="1" min="1"></p>
             </div>
             <div class="meat 5">
-                <input type="checkbox" id="meat5" onclick="addList(this,itemList4,kg17)">
+                <div class="m-top 5">
+                <input type="checkbox" id="meat5" onclick="addList(this,itemList4,kg17,'k')">
                 <label for="meat5">
                 <img src="Pics/meat/no-back/puffer-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Puffer Fish 1kg</p>
+                <p>Rs.1500</p>
                 <p><label for="kg17">Quantity: </label><input type="number" id="kg17" max="10" value="1" min="1"></p>
             </div>
             <div class="meat 6">
-                <input type="checkbox" id="meat6" onclick="addList(this,itemList4,kg18)">
+                <div class="m-top 6">
+                <input type="checkbox" id="meat6" onclick="addList(this,itemList4,kg18,'k')">
                 <label for="meat6">
                 <img src="Pics/meat/no-back/tilapia-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Tilapia 1kg</p>
+                <p>Rs.2100</p>
                 <p><label for="kg18">Quantity: </label><input type="number" id="kg18" max="10" value="1" min="1"></p>
             </div>
         </div>
@@ -303,123 +361,139 @@
 
     <section class="Bake&cookIngredient"><!--qty-->
     <form>
+        <h1>Baked Goods & Cooking Ingredients</h1>
         <div class="baked-container">
-            
 
             <div class="baked 1">
-                <input type="checkbox" id="baked1" onclick="addList(this,itemList5,qty7)">
+                <div class="b-top 1">
+                <input type="checkbox" id="baked1" onclick="addList(this,itemList5,qty7,'q')">
                 <label for="baked1">
                 <img src="Pics/baked/no-back/bread-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Loaf of Bread</p>
+                <p>Rs.150 </p>
                 <p><label for="qty6">Quantity: </label><input type="number" id="qty7" max="10" value="1" min="1"></p>
             </div>
             <div class="baked 2">
-                <input type="checkbox" id="baked2" onclick="addList(this,itemList5,qty8)">
+                <div class="b-top 2">
+                <input type="checkbox" id="baked2" onclick="addList(this,itemList5,qty8,'q')">
                 <label for="baked2">
                 <img src="Pics/baked/no-back/cookies-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Cookies Packet</p>
+                <p>Rs.300</p>
                 <p><label for="qty8">Quantity: </label><input type="number" id="qty8" max="10" value="1" min="1"></p>
             </div>
             <div class="baked 3">
-                <input type="checkbox" id="baked3" onclick="addList(this,itemList5,qty9)">
+                <div class="b-top 3">
+                <input type="checkbox" id="baked3" onclick="addList(this,itemList5,qty9,'q')">
                 <label for="baked3">
                 <img src="Pics/baked/no-back/croissant-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Croissant -Egg&Cheese</p>
+                <p>Rs.350</p>
                 <p><label for="qty9">Quantity: </label><input type="number" id="qty9" max="10" value="1" min="1"></p>
             </div>
             <div class="baked 4">
-                <input type="checkbox" id="baked4" onclick="addList(this,itemList5,qty10)">
+                <div class="b-top 4">
+                <input type="checkbox" id="baked4" onclick="addList(this,itemList5,qty10,'q')">
                 <label for="baked4">
                 <img src="Pics/baked/no-back/ketchup-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Heinz Tomato Ketchup</p>
+                <p>Rs.550</p>
                 <p><label for="qty10">Quantity: </label><input type="number" id="qty10" max="10" value="1" min="1"></p>
             </div>
             <div class="baked 5">
-                <input type="checkbox" id="baked5" onclick="addList(this,itemList5,qty11)">
+                <div class="b-top 5">
+                <input type="checkbox" id="baked5" onclick="addList(this,itemList5,qty11,'q')">
                 <label for="baked5">
                 <img src="Pics/baked/no-back/mayo-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Hellman's Mayo</p>
+                <p>Rs.1080</p>
                 <p><label for="qty11">Quantity: </label><input type="number" id="qty11" max="10" value="1" min="1"></p>
             </div>
             <div class="baked 6">
-                <input type="checkbox" id="baked6" onclick="addList(this,itemList5,qty12)">
+                <div class="b-top 6">
+                <input type="checkbox" id="baked6" onclick="addList(this,itemList5,qty12,'q')">
                 <label for="baked6">
                 <img src="Pics/baked/no-back/vanilla-removebg-preview.png" alt="">
                 </label>
-                <p> </p>
-                <p>Rs. </p>
+                </div>
+                <p>Rodelle's Vanila Essence</p>
+                <p>Rs.900</p>
                 <p><label for="qty12">Quantity: </label><input type="number" id="qty12" max="10" value="1" min="1"></p>
             </div>
         </div>
     </form>
-    </section>
-
-    <table border="1" width="500px"> 
-    <tr><th>Name</th> <th>Qty/kg(s)</th> <th>Price</th></tr>
-    <tbody id="t_body">
-        <tr id='fruitHead'><td colspan="3"> <center>Fruits</center></td></tr>
-        <tr id="idfruit1"></tr>    
-        <tr id="idfruit2"></tr>    
-        <tr id="idfruit3"></tr>    
-        <tr id="idfruit4"></tr>    
-        <tr id="idfruit5"></tr>    
-        <tr id="idfruit6"></tr>    
-        
-        <tr id='vegHead'><td colspan="3"> <center>Vegetables</center></td></tr>
-        <tr id="idvege1"></tr>    
-        <tr id="idvege2"></tr>    
-        <tr id="idvege3"></tr>    
-        <tr id="idvege4"></tr>    
-        <tr id="idvege5"></tr>    
-        <tr id="idvege6"></tr>    
-        
-        <tr id='dairyHead'><td colspan="3"> <center>Dairy</center></td></tr>
-        <tr id="iddairy1"></tr>
-        <tr id="iddairy2"></tr>
-        <tr id="iddairy3"></tr>
-        <tr id="iddairy4"></tr>
-        <tr id="iddairy5"></tr>
-        <tr id="iddairy6"></tr>
-        
-        <tr id='meatHead'><td colspan="3"> <center>Meat & Seafood</center></td></tr>
-        <tr id="idmeat1"></tr>
-        <tr id="idmeat2"></tr>
-        <tr id="idmeat3"></tr>
-        <tr id="idmeat4"></tr>
-        <tr id="idmeat5"></tr>
-        <tr id="idmeat6"></tr>
-        
-        <tr id='bakedHead'><td colspan="3"> <center>Baked Goods & Cooking Ingredients</center></td></tr>
-        <tr id="idbaked1"></tr>    
-        <tr id="idbaked2"></tr>    
-        <tr id="idbaked3"></tr>    
-        <tr id="idbaked4"></tr>    
-        <tr id="idbaked5"></tr>    
-        <tr id="idbaked6"></tr>    
-
-
-    </tbody>
+    <h1>Cart</h1>
+    <div class="table-container">
+        <table border="1" width="500px" id="cartTable"> 
+        <tr id="head"><th>Name</th> <th>Qty/kg(s)</th> <th>Price</th></tr>
+        <tbody id="t_body">
+            <tr id='fruitHead'><td colspan="3"> <center>Fruits</center></td></tr>
+            <tr id="idfruit1"></tr>    
+            <tr id="idfruit2"></tr>    
+            <tr id="idfruit3"></tr>    
+            <tr id="idfruit4"></tr>    
+            <tr id="idfruit5"></tr>    
+            <tr id="idfruit6"></tr>    
+            
+            <tr id='vegHead'><td colspan="3"> <center>Vegetables</center></td></tr>
+            <tr id="idvege1"></tr>    
+            <tr id="idvege2"></tr>    
+            <tr id="idvege3"></tr>    
+            <tr id="idvege4"></tr>    
+            <tr id="idvege5"></tr>    
+            <tr id="idvege6"></tr>    
+            
+            <tr id='dairyHead'><td colspan="3"> <center>Dairy</center></td></tr>
+            <tr id="iddairy1"></tr>
+            <tr id="iddairy2"></tr>
+            <tr id="iddairy3"></tr>
+            <tr id="iddairy4"></tr>
+            <tr id="iddairy5"></tr>
+            <tr id="iddairy6"></tr>
+            
+            <tr id='meatHead'><td colspan="3"> <center>Meat & Seafood</center></td></tr>
+            <tr id="idmeat1"></tr>
+            <tr id="idmeat2"></tr>
+            <tr id="idmeat3"></tr>
+            <tr id="idmeat4"></tr>
+            <tr id="idmeat5"></tr>
+            <tr id="idmeat6"></tr>
+            
+            <tr id='bakedHead'><td colspan="3"> <center>Baked Goods & Cooking Ingredients</center></td></tr>
+            <tr id="idbaked1"></tr>    
+            <tr id="idbaked2"></tr>    
+            <tr id="idbaked3"></tr>    
+            <tr id="idbaked4"></tr>    
+            <tr id="idbaked5"></tr>    
+            <tr id="idbaked6"></tr>    
     
-    <tfooter id="t_foot">
-        <tr id="output">
-            <td colspan="3"><center>Total Cost: <span id="result"> Rs.0</span> </center></td>
-        </tr>
-    </tfooter>
-    </table>
-
-    <button type="button" class="buy" id="buy"> <a href=""> Buy Now</a></button>
-    <button type="button" class="sav_fav" id="sav_fav">  Save Favourite</a></button>
-    <button type="button" class="app_fav" id="app_fav">  Apply Favourite</a></button>
-    </main>
+    
+        </tbody>
+        
+        <tfooter id="t_foot">
+            <tr id="output">
+                <td colspan="3"><center>Total Cost: <span id="result"> Rs.0</span> </center></td>
+            </tr>
+        </tfooter>
+        </table>
+    </div>
+    </section>
+    <hr>
+    <div class="controls">
+    <button type="button" class="buy" id="buy" onclick="buy()""> <a href="payment.html"> Buy Now</a></button>
+    <button type="button" class="sav_fav" id="sav_fav" onclick="addFav(favList)">  Save Favourite</a></button>
+    <button type="button" class="app_fav" id="app_fav" onclick="appFav(myFavList_DeSerial)">  Apply Favourite</a></button>
+    </div>
+</main>
 </body>
 </html>
