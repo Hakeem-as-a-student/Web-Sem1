@@ -1,10 +1,10 @@
 const itemList1=[//details of fruits
-    {"name":"Apple","price":600,"id":"fruit1","count":1},
-    {"name":"Banana","price":250,"id":"fruit2","count":1},
-    {"name":"Dragon Fruit","price":1100,"id":"fruit3","count":1},
-    {"name":"Grapes","price":700,"id":"fruit4","count":1},
-    {"name":"Orange","price":1000,"id":"fruit5","count":1},
-    {"name":"Tomato","price":640,"id":"fruit6","count":1}
+    {"name":"Apple","price":600,"id":"fruit1","qty":"kg1"},
+    {"name":"Banana","price":250,"id":"fruit2","qty":"kg2"},
+    {"name":"Dragon Fruit","price":1100,"id":"fruit3","qty":"kg3"},
+    {"name":"Grapes","price":700,"id":"fruit4","qty":"kg4"},
+    {"name":"Orange","price":1000,"id":"fruit5","qty":"kg5"},
+    {"name":"Tomato","price":640,"id":"fruit6","qty":"kg6"}
 
 ]
 const itemList2=[//details of vegetables
@@ -51,6 +51,20 @@ let myFavList_DeSerial;//deserialized favouriteList
 let finalCost=0;//totalCost Of All Items
 let finalCostSerial;//totalCost serialized
 let finalCostDeSerial;//totalCost deserialized
+
+const IDList=[//IDs of checkboxes
+    "fruit1","fruit2","fruit3","fruit4","fruit5","fruit6",
+    "vege1","vege2","vege3","vege4","vege5","vege6",
+    "dairy1","dairy2","dairy3","dairy4","dairy5","dairy6",
+    "meat1","meat2","meat3","meat4","meat5","meat6",
+    "baked1","baked2","baked3","baked4","baked5","baked6"
+]
+
+const portionUnit=[//kg/qty ID list
+    "qty1","qty2","qty3","qty4","qty5","qty6","qty7","qty8","qty9","qty10","qty11","qty12",
+    "kg1","kg2","kg3","kg4","kg5","kg6","kg7","kg8","kg9","kg10","kg11","kg12","kg13","kg14",
+    "kg15","kg16","kg17","kg18"
+]
 
 
 function addList(checkName,itemList,portion,portUni){//checkID,detailsOfProduct,qty/weight,qty/weight Unit
@@ -147,10 +161,124 @@ function addFav(favList){//saving items to favouriteList
     // console.log(localStorage);
 }
 
-function appFav(myFavList_DeSerial){//fucniton for applying items from favourite list
+function appFav(myFavList_DeSerial,IDList){//fucniton for applying items from favourite list
     myFavList_DeSerial=JSON.parse(localStorage.getItem('myFavList')); //Deserialized List 
-    console.log(localStorage);
+    // console.log(localStorage);
+
     console.log(myFavList_DeSerial);
+    let lineNameList=[];
+    let IDs=[];
+    let concatList=itemList1.concat(itemList2,itemList3,itemList4,itemList5);
+    // console.log(concatList);
+
+
+    let unitList=[];
+    let priceList=[];
+    let nameList=[];
+
+    let tempUnit;
+    let tempPrice;
+    let tempName;
+
+    for(item in myFavList_DeSerial){
+    for(checkID in IDList){//to get the lineName of the table
+        if(item==IDList[checkID]){
+            let lineName="id"+IDList[checkID];
+            // let name=myFavList_DeSerial[item];
+            // nameList.push(name);
+            let ID=IDList[checkID];
+            IDs.push(ID);
+            lineNameList.push(lineName);
+        }
+    }
+    }
+
+    for (ID in IDs){
+        // console.log(IDs[ID]);
+        
+        for(let listIndex=0;listIndex<6;listIndex++){
+                if(IDs[ID]==itemList1[listIndex]["id"]){
+                    console.log(itemList1[listIndex]);
+                    document.getElementById(itemList1[listIndex]["id"]).checked=true;
+                    document.getElementById(itemList1[listIndex]["qty"]).disabled=true;
+                    document.getElementById("id"+itemList1[listIndex]["id"]).innerHTML=
+                    `
+                        <td> ${itemList1[listIndex]["name"]} </td>
+                        <td> ${document.getElementById(itemList1[listIndex]["qty"]).value} </td>
+                        <td> ${document.getElementById(itemList1[listIndex]["qty"]).value*itemList1[listIndex]["price"]} </td>
+
+                    `;
+                }
+                else if(IDs[ID]==itemList2[listIndex]["id"]){
+                    console.log(itemList2[listIndex]);
+                    document.getElementById(itemList2[listIndex]["id"]).checked=true;
+
+                }
+                else if(IDs[ID]==itemList3[listIndex]["id"]){
+                    console.log(itemList3[listIndex]);
+                    document.getElementById(itemList3[listIndex]["id"]).checked=true;
+                }
+                else if(IDs[ID]==itemList4[listIndex]["id"]){
+                    console.log(itemList4[listIndex]);
+                    document.getElementById(itemList4[listIndex]["id"]).checked=true;
+                }
+                else if(IDs[ID]==itemList5[listIndex]["id"]){
+                    console.log(itemList5[listIndex]);
+                    document.getElementById(itemList5[listIndex]["id"]).checked=true;
+                }
+                
+        }
+    }
+
+
+
+
+
+    //     for (unitID in portionUnit){//to get the units in the favList
+    //         if(item==portionUnit[unitID]){
+    //             let portionValue=portionUnit[unitID];
+    //             // console.log(portionValue);
+    //             unitList.push(portionValue);
+    //         }
+    //     }
+
+    //     for (unitID in portionUnit){//used to get the priceID of favList
+    //         if(item==portionUnit[unitID]+"price"){
+    //             let itemPrice=portionUnit[unitID]+"price";
+    //             console.log(itemPrice);
+    //             priceList.push(itemPrice);
+    //         }
+    //     }
+        
+
+    //     for (line in lineNameList){
+    //         let row;
+    //         for(item in nameList){
+    //             tempName=nameList[item];
+    //             document.getElementById(line).innerHTML=`<td>${tempName}</td><td></td></td>`
+    //         }
+    //         for(item in unitList){
+    //             tempUnit=unitList[item];
+    //             document.getElementById(line).innerHTML=`<td></td><td>${tempUnit}</td><td></td>`
+    //         }
+    //         for(item in priceList){
+    //             tempPrice=priceList[item];
+    //             document.getElementById(line).innerHTML=`<td></td><td></td><td>${tempPrice}</td>`
+    //         }
+
+    //     }
+    // }
+
+
+
+    
+
+    // console.log(lineNameList);
+    // console.log(unitList);
+    // console.log(priceList);
+    // console.log(nameList);
+    
+
 }
 
 function buy(){//funtion to save the final Cost
@@ -173,7 +301,7 @@ let radio2=document.getElementById('debit');//getting radioButton ID
 let radio3=document.getElementById('cod');//getting radioButton ID
 
 function unlock(){//function for unlocking fields to enter credit details
-    if (radio1.checked==false && radio2.checked==false && radio3.checked==false){
+    if (radio1.checked==false && radio2.checked==false){
         
         document.getElementById("cardNum").disabled=true;
         document.getElementById("exp").disabled=true;

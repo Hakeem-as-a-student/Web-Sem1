@@ -7,8 +7,45 @@
     <link rel="stylesheet" href="style-order.css">
     <script src="script.js" defer></script>
 </head>
-<body class="body-container" onload="test(),unlock()" >
-    <!-- <div class="body-container"> -->
+<body onload="test(),unlock()" >
+    <header>
+        <div class="nav">
+            <img src="Pics/Logo_no_back-new.png" alt="logo" class="nav_logo">
+        <div class="nav_content">
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><div class="drop_trigger">
+                <span>Products</span>
+                <div class="drop_content">
+                    <a href="dairy.html">Dairy</a>
+                    <a href="vegetable.html">Vegetables</a>
+                    <a href="cosmetic.html">Cosmetics</a>
+                </div>
+            </div></li>
+            <li><a href='order1.html'>Order</a></li>
+            <li><a href='Loyalty_register.html'>Loyalty Program</a></li>
+            <li><a href='About.html'>About us</a></li>
+        </ul>
+        </div>
+        </div>
+        
+        <div class="small_nav">
+            <ul><li><a href='index.html'>Home</a></li>
+                <li><div class="small_drop_trigger">
+                    <span>Products</span>
+                    <div class="small_drop_content">
+                        <a href="dairy.html">Dairy</a>
+                        <a href="vegetable.html">Vegetables</a>
+                        <a href="cosmetic.html">Cosmetics</a>
+                    </div>
+                </div></li>
+                <li><a href='Order.html'>Order</a></li>
+                <li><a href='Loyalty_register.html'>Loyalty Program</a></li>
+                <li><a href='About.html'>About us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="body-container">
     <div class="table-containerPay">
         <h1>Cart</h1>
         
@@ -35,16 +72,53 @@
         </div>
         <hr>
         <div class="price-container">
-            <p>Total Amount to Be Paid: Rs.<span id="price"></span> </p>
+            <p>Total Cost: Rs.<span id="price"></span> </p>
             <hr>
         </div>
         </fieldset>
     </form>
+    <div class="controls">
+    <hr>
     <button type="button" id="back"><a href="order1.html">Go Back</a></button>
     <button type="button" id="pay"><span>Pay Now</span></button>
+    </div>
         
 
 </div>
-<!-- </div> -->
+</div>
+<footer>
+    <div class="foot_banner">  
+        <div class="foot_content">
+            <img src="Pics/Logo_no_back-new.png" alt='website logo' class="foot_logo">
+            <p class="faq"><u>FAQ</u></br>
+                What delivery options are available? <br>
+                How do I place an order online? <br>
+                Do you offer same-day delivery?</p>
+
+            <div class="socials">
+                <a href='https://www.facebook.com/profile.php?id=100089603665671' target="_blank"><img src="Pics/facebook logo.webp"alt='icon' class="img1"></a>
+                <a href='https://www.instagram.com/dha_quiet_kid/' target="_blank"><img src="Pics/Instagram_logo_2016.svg.webp" alt="icon2" class="img2"></a>
+                <a href="mailto:"><img src="Pics/mail3.jpg" alt="icon3" class="img3"></a>
+                <a href='tel:'><img src="Pics/Phone_icon.png" alt="icon4" class="img4"></a>
+                <p class="para1"><a href='https://www.facebook.com/profile.php?id=100089603665671' target="_blank">Facebook</a></p>
+                <p class="para2"><a href='https://www.instagram.com/dha_quiet_kid/' target="_blank">Instagram</a></p>
+                <p class="para3"><a href="mailto:">Mail</a></p>
+                <p class="para4"><a href='tel:'>Phone</a></p>
+        </div>
+
+        </div>
+
+        <div class="address">
+            <img src="Pics/buildd50.png" alt="building" class="building">
+            <p class="work">No. 388 Union Pl, Colombo 00200</p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Copyright Reserved</p>
+        </div>
+
+    </div>
+
+</footer>
 </body>
 </html>
