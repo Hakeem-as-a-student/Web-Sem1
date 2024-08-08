@@ -1,3 +1,4 @@
+/*--------------------------------------------Payment Page Styling-------------------------------------------*/
 /*Configuring default settings for webpage*/
 *{
     margin:0;
@@ -454,54 +455,8 @@ p{
     text-align: center;
 }
 
-/*table styles*/
-.summary{
-    /* border-color: red; */
-    border-collapse:collapse;
-}
 
-/*input check style*/
-input[type="checkbox"]{
-    -webkit-appearance: none;
-
-    cursor: pointer;
-    width: 100%;
-    position: relative;
-}
-
-input[type="checkbox"]:checked::before{
-    
-    position: absolute;
-    content: '';
-    
-    translate:-5px -20px;
-    padding: 10px 5px;
-    
-    width: 200px;
-    height: 290px;
-    background-image: conic-gradient(from var(--angle),transparent 20%,lime);
-
-    z-index: -2;
-    animation: 3s spin linear infinite;
-}
-
-/*animating selecting animation*/
-@property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-
-@keyframes spin{
-    from{
-        --angle:0deg;
-    }
-    to{
-        --angle:360deg;
-        background-image: conic-gradient(lime);
-    }
-}
+/*form styling*/
 
 /*Heading Stylings*/
 h1{
@@ -515,368 +470,72 @@ h1{
     
 }
 
-/*fruit container*/
-.fruit-container{
-    width: 100%;
+.body-container{
+    max-width:100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(128, 128, 128, 0.104);
-    justify-content: center;
-    padding: 50px 0;
+    background: url(Pics/form2.jpg);
+    margin: 0;
+    background-repeat: repeat;
 }
-.fruit{
-    background-color: rgb(255, 255, 255);
-    width: 200px;
-    height: 290px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 10px; 
-    border: 1px solid rgba(0, 0, 0, 0.168);
-    transition: all 0.2s linear;
-    padding-bottom: 10px;
-    
-    position: relative;
-
-
+fieldset{
+    max-width:80%;
+    height:auto;
+    margin:auto;
+    padding:1em 2em;
+    border:1px solid #ccc;
+    /* border-radius: 6px; */
+    min-width: 200px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background-color: beige;
 }
 
 
-.fruit:hover{
-    box-shadow: 2px 2px 5px #00000036, -2px -2px 5px #0000003f;
-    transform: translateY(-8px);
-    z-index: 1;
+#back a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 18px;
+    /* background-color: lime; */
 }
-
-
-
-.f-top{
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
+.form-container{
+    height: inherit;
 }
-.f-bottom{
-    width: 100%;
-    height: 120px;
-    background-color: rgba(255, 255, 255, 1);
+.form-container label:first-of-type{
+    display: block;
+    margin-top: .2em;
+    margin-left: .5em;
+    margin-bottom: .2em;
+    margin-right: 5px;
 }
-
-.fruit img{
-    position: relative;
-    left: 10px;
-    top: -5px;
-    /* border-radius: 25px; */
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.fruit>.f-bottom p{
-    font-size: 12px;
-    color:black;
-    margin: auto 50px;
+legend{
     text-align: center;
-    
+    font-size: 1.25em;
+    font-family: para;
+    font-weight: bold;
+    padding: 1em .25em;
+    color:black;
+    transform: translateY(25px);
 }
-/*vege container*/
-.vege-container{
-    background-color: rgba(128, 128, 128, 0.104);
-    width: 100%;
+#pay-container input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.form-container hr{
+    margin: 10px 0;
+}
+
+.form-container input[type="text"],input[type="number"],input[type="date"]{
+    width:250px;
     height: auto;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    padding: 50px 0;
-    
-}
-.v-top{
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-
-}
-.v-bottom{
-    width: 100%;
-    height: 120px;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.veg{
-    background-color: white;
-    /* border-radius: 25px; */
-    border: 1px solid rgba(0, 0, 0, 0.168);
-    width: 200px;
-    height: 290px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 10px;
-    transition: all 0.2s linear;
-    padding-bottom: 10px;
-}
-
-
-.veg:hover{
-    box-shadow: 2px 2px 5px #00000036, -2px -2px 5px #0000003f;
-    transform: translateY(-5px);
-}
-
-
-.veg img{
-    position: relative;
-    left: 20px;
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    
-}
-.veg>.v-bottom p{
-    
+    outline: none;
     font-size: 12px;
-    color:black;
-    margin: auto 50px;
-    text-align: center;
-}
-
-/*dairy container*/
-.dairy-container{
-    background-color: rgba(128, 128, 128, 0.104);
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    padding: 50px 0;
-    
-}
-.dairy{
-    background-color: rgba(255, 255, 255, 1);
-    width: 200px;
-    height: 290px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 10px; 
-    border: 1px solid rgba(0, 0, 0, 0.168);
-    transition: all 0.2s linear;
-}
-
-
-.dairy:hover{
-    box-shadow: 2px 2px 5px #00000036, -2px -2px 5px #0000003f;
-    transform: translateY(-5px);
-}
-
-.d-top{
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-
-}
-.d-bottom{
-    width: 100%;
-    height: 120px;
-    background-color: rgba(255, 255, 255, 1);
-}
-.dairy img{
-    position: relative;
-    left: 10px;
-    top: -5px;
-    /* border-radius: 25px; */
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    cursor: pointer;
-    
-}
-.dairy>.d-bottom p{
-    font-size: 12px;
-    color:black;
-    margin: auto 50px;
-    text-align: center;
-}
-
-/*meat container*/
-.meat-container{
-    background-color: rgba(128, 128, 128, 0.104);
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    padding: 50px 0;
-}
-.m-top{
-    width: 100%;
-    
-    background-color: rgba(255, 255, 255, 1);
-    /* border-radius: 25px 25px 0 0; */
-}
-.m-bottom{
-    width: 100%;
-    height: 120px;
-    background-color: rgba(255, 255, 255, 1);
-}
-.meat>.m-bottom p{
-    font-size: 12px;
-    color:black;
-    margin: 3px 50px;
-    text-align: center;
-}
-
-
-.meat{
-    background-color: rgba(255, 255, 255, 1);
-    width: 200px;
-    height: 290px;
-    /* border-radius: 25px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 10px; 
-    border: 1px solid rgba(0, 0, 0, 0.168);
-    transition: all 0.2s linear;
-    padding-bottom: 10px;
-
-}
-
-
-
-.meat:hover{
-    box-shadow: 2px 2px 5px #00000036, -2px -2px 5px #0000003f;
-    transform: translateY(-5px);
-}
-.meat img{
-    position: relative;
-    left: 10px;
-    top: -5px;
-    /* border-radius: 25px; */
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-
-/*baked container*/
-.baked-container{
-    background-color: rgba(128, 128, 128, 0.076);
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    padding: 50px 0;
-}
-
-.b-top{
-    width: 100%;
-    
-    background-color: rgba(255, 255, 255, 1);
-    
-}
-
-.b-bottom{
-    width: 100%;
-    height: 120px;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.baked{
-    background-color: rgba(255, 255, 255, 1);
-    width: 200px;
-    height: 290px;
-    /* border-radius: 25px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 10px; 
-    border: 1px solid rgba(0, 0, 0, 0.168);
-    transition: all 0.1s linear;
-    padding-bottom: 10px;
-}
-
-
-
-.baked:hover{
-    box-shadow: 2px 2px 5px #00000036, -2px -2px 5px #0000003f;
-    transform: translateY(-5px);
-}
-.baked img{
-    position: relative;
-    left: 10px;
-    top: -5px;
-    border-radius: 25px;
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-
-.baked>.b-bottom p{
-    font-size: 12px;
-    color:black;
-    margin: 3px 50px;
-    text-align: center;
-}
-
-/*Table Styling*/
-table{
-    border-collapse: collapse;
+    padding:0 15px;
+    line-height: 30px;
+    /* border-radius: 5px; */
     border: 2px solid black;
-    background-color: white;
 
 }
 
-.table-container{
-    display: flex;
-    justify-content: center;
-}
-table td{
-    padding:5px ;
-}
-
-#head{
-    background-color: rgba(0, 0, 255, 0.507);
-    border: 1px solid black;
-}
-#fruitHead{
-    background-color: rgba(0, 255, 255, 0.416);
-    border: 1px solid black;
-}
-#vegHead{
-    background-color: rgba(0, 255, 255, 0.416);
-    border: 1px solid black;
-}
-#dairyHead{
-    background-color: rgba(0, 255, 255, 0.416);
-    border: 1px solid black;
-}
-#meatHead{
-    background-color: rgba(0, 255, 255, 0.416);
-    border: 1px solid black;
-}
-#bakedHead{
-    background-color: rgba(0, 255, 255, 0.416);
-    border: 1px solid black;
-}
-#output{
-    background-color: rgba(255, 0, 0, 0.654);
-    border: 1px solid black;
-}
-
-.table-container{
-    background-color: rgba(0, 255, 255, 0.108);
-    width: 100%;
-    padding-top:60px ;
-    padding-bottom:60px ;
-
-    /* height: 500px; */
-    height: auto;
-    align-items: center;
-}
 .controls{
     align-items: center;
 }

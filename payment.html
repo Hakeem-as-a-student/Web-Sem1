@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style-order.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style-pay.css">
+    
+    <script src="script2.js" defer></script>
+    
 </head>
-<body onload="test(),unlock()" >
+<body id="payBody">
     <header>
         <div class="nav">
             <img src="Pics/Logo_no_back-new.png" alt="logo" class="nav_logo">
@@ -39,7 +41,7 @@
                         <a href="cosmetic.html">Cosmetics</a>
                     </div>
                 </div></li>
-                <li><a href='Order.html'>Order</a></li>
+                <li><a href='order1.html'>Order</a></li>
                 <li><a href='Loyalty_register.html'>Loyalty Program</a></li>
                 <li><a href='About.html'>About us</a></li>
             </ul>
@@ -57,18 +59,30 @@
         <fieldset>
         <legend>Payement Details</legend>
         <hr>
-        <p><label for="name">Full Name:</label> <input type="text" id="name" maxlength="35"></p><br>
-        <p><label for="address">Billing Address:</label> <input type="text" id="address" maxlength="50"></p><br>
+        <p>
+            
+            <input type="text" id="name" maxlength="35" placeholder="Full Name"></p><br>
+        <p>
+            
+             <input type="text" id="address" maxlength="50" placeholder="Billing Address"></p><br>
         <p><label for="pay">Payment Method:</label> <br>
-        &emsp; <input type="radio" name="pay" id="credit" onclick="unlock()" ><label for="credit" > Credit</label><br>
-        &emsp; <input type="radio" name="pay" id="debit" onclick="unlock()"><label for="debit"> Debit</label><br>
-        &emsp; <input type="radio" name="pay" id="cod" onclick="unlock()"><label for="cod"> Cash on Delivery</label>
+        &emsp; <input type="radio" name="pay" id="credit" ><label for="credit" > Credit</label><br>
+        &emsp; <input type="radio" name="pay" id="debit" ><label for="debit"> Debit</label><br>
+        &emsp; <input type="radio" name="pay" id="cod" ><label for="cod"> Cash on Delivery</label>
         </p><br>
         <div id="pay-container">
-            <p><label for="cardNum" id="cardID">Card Number:</label> <input type="number" id="cardNum" min="0"></p><br>
-            <p><label for="exp" id="expID">Expiration Date:</label> <input type="date" id="exp"></p><br>
-            <p><label for="cvv" id="cvvID">CVV:</label> <input type="number" id="cvv" min="0" maxlength="4"></p><br>
-            <p><label for="phone">Phone Number:</label> <input type="number" id="phone" min="0"></p><br>
+            <p>
+                
+                <input type="number" id="cardNum" min="0" placeholder="Card Number"></p><br>
+            <p>
+                
+                <input type="date" id="exp" placeholder="Expiration Date"></p><br>
+            <p>
+                
+                <input type="number" id="cvv" min="0" maxlength="4" placeholder="CVV"></p><br>
+            <p>
+                
+                 <input type="number" id="phone" min="0" placeholder="Phone Number"></p><br>
         </div>
         <hr>
         <div class="price-container">
